@@ -1,2 +1,5 @@
 numpy
 networkx
+
+fastapi
+uvicorn

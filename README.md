@@ -13,3 +13,14 @@ Fungal networks dynamically expand towards nutrient sources and prune redundant,
 ```bash
 python examples/simulate_routing.py
 ```
+
+
+## FastAPI API Service
+The project includes a FastAPI server wrapper. 
+
+### Running the API
+```bash
+uvicorn src.api:app --host 0.0.0.0 --port 8000
+```
+- **Interactive docs**: Navigate to `/docs` for swagger documentation.
+- **POST `/route`**: Pass `{"source": 0, "target": 5, "flux": 2.0}` to calculate transport route.
